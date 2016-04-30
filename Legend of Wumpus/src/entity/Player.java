@@ -5,9 +5,7 @@ import javax.imageio.ImageIO;
 import display.World;
 import display.WumpusPanel;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Robot;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
@@ -25,14 +23,12 @@ public final class Player extends Entity {
 
 	static {
 		try {
-			northImage = ImageIO.read(new File("assets/wumpus/north.png")).getScaledInstance(28, 30,
-					Image.SCALE_REPLICATE);
-			southImage = ImageIO.read(new File("assets/wumpus/south.png")).getScaledInstance(28, 30,
-					Image.SCALE_REPLICATE);
-			eastImage = ImageIO.read(new File("assets/wumpus/east.png")).getScaledInstance(28, 30,
-					Image.SCALE_REPLICATE);
-			westImage = ImageIO.read(new File("assets/wumpus/west.png")).getScaledInstance(28, 30,
-					Image.SCALE_REPLICATE);
+			northImage = ImageIO.read(new File("assets/wumpus/north.png"));// .getScaledInstance(arg0,
+																			// arg1,
+																			// Image.SCALE_REPLICATE);
+			southImage = ImageIO.read(new File("assets/wumpus/south.png"));
+			eastImage = ImageIO.read(new File("assets/wumpus/east.png"));
+			westImage = ImageIO.read(new File("assets/wumpus/west.png"));
 		} catch (IOException e) {
 			System.err.print("Error reading Player image files");
 			System.exit(1);
@@ -41,8 +37,8 @@ public final class Player extends Entity {
 
 	public Player() {
 		this.health = 10;
-		this.x = 100;
-		this.y = 100;
+		this.x = 300;
+		this.y = 300;
 	}
 
 	/**
@@ -106,9 +102,5 @@ public final class Player extends Entity {
 			x -= pixels;
 			break;
 		}
-	}
-
-	public int getHealth() {
-		return health;
 	}
 }

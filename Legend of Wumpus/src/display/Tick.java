@@ -14,23 +14,23 @@ public class Tick implements ActionListener {
 		this.kb = kb;
 	}
 
-	/** Absolutely NOTHING related to GUI may happen here. */
+	/**Absolutely NOTHING related to GUI may happen here.*/
+	@SuppressWarnings("static-access")
 	public void actionPerformed(ActionEvent e) {
 		movePlayer();
 		entityTick();
 		collideEntities();
 		container.update(container.getGraphics());
-		if (World.getGameState() == 2) { // Stop the world engine
-			// This is super bad practice, need to fix
+		if(World.getGameState() == 2) { //Stop the world engine
 			container.ticker.stop();
 		}
 	}
 
 	private void movePlayer() {
-		if (kb.isKeyPressed('w'))
-			World.getThePlayer().move(5);
+		if(kb.isKeyPressed('w'))
+			WumpusPanel.thePlayer.move(5);
 	}
-
+	
 	/**
 	 * Takes all the entities in the world and computes if any are touching. If
 	 * they are touching, call <entity>.collide().

@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-import display.World;
 import display.WumpusPanel;
 
 public class EntityGremlin extends EntityMinion {
@@ -52,8 +51,8 @@ public class EntityGremlin extends EntityMinion {
 
 	@Override
 	public void tick() {
-		int playerX = World.getThePlayer().getX();
-		int playerY = World.getThePlayer().getY();
+		int playerX = WumpusPanel.thePlayer.getX();
+		int playerY = WumpusPanel.thePlayer.getY();
 		if(Math.abs(this.x - playerX) + Math.abs(this.y - playerY) < 300) {
 			if(Math.abs(this.x - playerX)  > Math.abs(this.y - playerY)) {
 				this.x += (x - playerX) > 1 ? -1 : 1;
