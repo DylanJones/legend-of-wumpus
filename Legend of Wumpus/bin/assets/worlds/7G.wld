@@ -1,0 +1,11 @@
+tiles 7G.tiles
+music Overworld.wav
+north 8G.wld
+south 6G.wld
+east 7H.wld
+west 7F.wld
+entities:
+OctorokRed
+OctorokRed
+OctorokRed
+OctorokRed

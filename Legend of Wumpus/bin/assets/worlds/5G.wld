@@ -1,0 +1,8 @@
+tiles 5G.tiles
+music Overworld.wav
+north 6G.wld
+south 4G.wld
+east 5H.wld
+west 5F.wld
+entities:
+OctorokRed

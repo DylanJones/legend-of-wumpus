@@ -1,0 +1,10 @@
+tiles 8B.tiles
+music Overworld.wav
+north 1B.wld
+south 7B.wld
+east 8C.wld
+west 8A.wld
+entities:
+spider
+spider
+OctorokRed

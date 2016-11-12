@@ -1,0 +1,8 @@
+tiles 8E.tiles
+music Overworld.wav
+north 1E.wld
+south 7E.wld
+east 8F.wld
+west 8D.wld
+entities:
+ioexception

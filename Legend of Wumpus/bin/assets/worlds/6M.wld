@@ -1,0 +1,9 @@
+tiles 6M.tiles
+music Overworld.wav
+north 7M.wld
+south 5M.wld
+east 6N.wld
+west 6L.wld
+entities:
+molblin
+molblin

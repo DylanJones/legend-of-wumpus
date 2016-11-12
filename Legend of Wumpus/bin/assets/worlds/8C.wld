@@ -1,0 +1,8 @@
+tiles 8C.tiles
+music Overworld.wav
+north 1C.wld
+south 7C.wld
+east 8D.wld
+west 8B.wld
+entities:
+OctorokRed

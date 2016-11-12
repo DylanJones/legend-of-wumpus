@@ -1,0 +1,7 @@
+tiles 8H.tiles
+music Overworld.wav
+north 1H.wld
+south 7H.wld
+east 8I.wld
+west 8G.wld
+entities:

@@ -1,0 +1,11 @@
+tiles 5O.tiles
+music Overworld.wav
+north 6O.wld
+south 4O.wld
+east 5P.wld
+west 5N.wld
+entities:
+molblin
+molblin
+molblin
+molblin

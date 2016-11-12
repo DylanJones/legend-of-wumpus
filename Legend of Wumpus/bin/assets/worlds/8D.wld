@@ -1,0 +1,11 @@
+tiles 8D.tiles
+music Overworld.wav
+north 1D.wld
+south 7D.wld
+east 8E.wld
+west 8C.wld
+entities:
+OctorokRed
+OctorokRed
+spider
+molblin

@@ -1,0 +1,6 @@
+tiles 2N.tiles
+music Overworld.wav
+north 3N.wld
+south 1N.wld
+east 2O.wld
+west 2M.wld
