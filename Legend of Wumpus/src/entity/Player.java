@@ -170,7 +170,7 @@ public final class Player extends Entity {
 			lastDamageTime = System.currentTimeMillis();
 			// We're invulrnaberale while attacking
 			if (System.currentTimeMillis() - this.attackStartTime > ATTACK_TIME) {
-				if (health > 0 /* && !godmode */) {// Stops Player from having
+				if (health > 0 && canTakeDamage) {// Stops Player from having
 													// negative health
 					health -= amount;
 					if (health <= 0) { // did it go below 0?
