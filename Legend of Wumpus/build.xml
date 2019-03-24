@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Legend of Wumpus" default="makejar" basedir=".">
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin"/>
+    </target>
+    <target name="makejar" description="Create a jar for the project">
+        <jar destfile="${ant.project.name}.jar">
+            <fileset dir="bin"/>
+            <manifest>
+                <attribute name="Main-Class" value="Main"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
